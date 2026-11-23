@@ -1,6 +1,6 @@
 // Ganti semua data placeholder di file ini.
 export const site = {
-  brand: "DISCUS HOUSE",
+  brand: "FANGXY DISCUS",
   tagline: "Premium Discus, Jakarta",
   whatsapp: "628998652062", // format internasional tanpa "+"
   instagram: "https://www.instagram.com/",
