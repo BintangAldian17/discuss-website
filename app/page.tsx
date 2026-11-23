@@ -1,4 +1,4 @@
-import { heroCredit, site, steps, waLink } from "@/lib/data";
+import { heroCredit, products, site, steps, waLink } from "@/lib/data";
 import ProductGrid from "./ProductGrid";
 
 const label = "text-[11px] tracking-[0.25em] uppercase";
@@ -53,12 +53,18 @@ export default function Home() {
       </main>
 
       <footer className={`border-t border-neutral-200 px-6 py-10 text-neutral-500 md:px-12 ${label} flex flex-wrap justify-between gap-4`}>
+        <span>© {site.brand}</span>
         <span>{site.address}</span>
-        <span className="normal-case tracking-normal">{heroCredit}</span>
-        <span className="flex gap-6">
-          <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-neutral-900">Instagram</a>
-          <a href={site.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-neutral-900">Facebook</a>
-        </span>
+        <a href={site.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-neutral-900">Facebook</a>
+        {/* Wajib selama memakai foto CC; hapus saat foto diganti milik sendiri */}
+        <details className="w-full normal-case tracking-normal text-neutral-400">
+          <summary className="cursor-pointer">Kredit Foto</summary>
+          <ul className="mt-2 space-y-1">
+            {[heroCredit, ...products.map((p) => p.credit && `Discus ${p.name}: ${p.credit}`)].filter(Boolean).map((c) => (
+              <li key={c}>{c}</li>
+            ))}
+          </ul>
+        </details>
       </footer>
 
       {/* WA MENGAMBANG */}

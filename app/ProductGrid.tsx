@@ -53,7 +53,6 @@ export default function ProductGrid() {
                   </div>
                 ))}
               </dl>
-              {active.credit && <p className="mt-4 text-[10px] text-neutral-400">Foto: {active.credit}</p>}
               <a
                 href={waLink(`Halo, saya tertarik dengan Discus ${active.name} (Grade ${active.grade}, ${active.size}). Apakah masih tersedia?`)}
                 target="_blank"

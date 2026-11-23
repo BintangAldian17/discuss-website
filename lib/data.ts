@@ -3,7 +3,6 @@ export const site = {
   brand: "FANGXY DISCUS",
   tagline: "Premium Discus, Jakarta",
   whatsapp: "628998652062", // format internasional tanpa "+"
-  instagram: "https://www.instagram.com/",
   facebook: "https://www.facebook.com/profile.php?id=61577818371046",
   address: "Jakarta Barat, Indonesia",
 };
