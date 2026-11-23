@@ -53,10 +53,12 @@ export default function Home() {
       </main>
 
       <footer className={`border-t border-neutral-200 px-6 py-10 text-neutral-500 md:px-12 ${label} flex flex-wrap justify-between gap-4`}>
-        <span>© {site.brand}</span>
         <span>{site.address}</span>
         <span className="normal-case tracking-normal">{heroCredit}</span>
-        <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-neutral-900">Instagram</a>
+        <span className="flex gap-6">
+          <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-neutral-900">Instagram</a>
+          <a href={site.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-neutral-900">Facebook</a>
+        </span>
       </footer>
 
       {/* WA MENGAMBANG */}
